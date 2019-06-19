@@ -2,15 +2,15 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "virtualMachines_TutoVMClientAD3_name": {
-            "defaultValue": "TutoVMClientAD3",
+        "virtualMachines_TutoVMClientAD4_name": {
+            "defaultValue": "TutoVMClientAD4",
             "type": "String"
         },
-        "disks_TutoVMClientAD3_OsDisk_1_599c09991e4f4b33a04759dfdcf5063a_externalid": {
+        "disks_TutoVMClientAD4_OsDisk_1_599c09991e4f4b33a04759dfdcf5063a_externalid": {
             "defaultValue": "/subscriptions/922efab2-bf0e-4c64-bd4e-9175595a3181/resourceGroups/TUTORIALRESOURCES/providers/Microsoft.Compute/disks/TutoVMClientAD3_OsDisk_1_599c09991e4f4b33a04759dfdcf5063a",
             "type": "String"
         },
-        "networkInterfaces_TutoVMClientAD3_externalid": {
+        "networkInterfaces_TutoVMClientAD4_externalid": {
             "defaultValue": "/subscriptions/922efab2-bf0e-4c64-bd4e-9175595a3181/resourceGroups/TutorialResources/providers/Microsoft.Network/networkInterfaces/TutoVMClientAD3",
             "type": "String"
         }
@@ -20,7 +20,7 @@
         {
             "type": "Microsoft.Compute/virtualMachines",
             "apiVersion": "2018-10-01",
-            "name": "[parameters('virtualMachines_TutoVMClientAD3_name')]",
+            "name": "[parameters('virtualMachines_TutoVMClientAD4_name')]",
             "location": "eastus",
             "properties": {
                 "hardwareProfile": {
@@ -35,19 +35,19 @@
                     },
                     "osDisk": {
                         "osType": "Windows",
-                        "name": "[concat(parameters('virtualMachines_TutoVMClientAD3_name'), '_OsDisk_1_599c09991e4f4b33a04759dfdcf5063a')]",
+                        "name": "[concat(parameters('virtualMachines_TutoVMClientAD4_name'), '_OsDisk_1_599c09991e4f4b33a04759dfdcf5063a')]",
                         "createOption": "FromImage",
                         "caching": "ReadWrite",
                         "managedDisk": {
                             "storageAccountType": "Premium_LRS",
-                            "id": "[parameters('disks_TutoVMClientAD3_OsDisk_1_599c09991e4f4b33a04759dfdcf5063a_externalid')]"
+                            "id": "[parameters('disks_TutoVMClientAD4_OsDisk_1_599c09991e4f4b33a04759dfdcf5063a_externalid')]"
                         },
                         "diskSizeGB": 127
                     },
                     "dataDisks": []
                 },
                 "osProfile": {
-                    "computerName": "[parameters('virtualMachines_TutoVMClientAD3_name')]",
+                    "computerName": "[parameters('virtualMachines_TutoVMClientAD4_name')]",
                     "adminUsername": "admincis",
                     "windowsConfiguration": {
                         "provisionVMAgent": true,
@@ -59,7 +59,7 @@
                 "networkProfile": {
                     "networkInterfaces": [
                         {
-                            "id": "[parameters('networkInterfaces_TutoVMClientAD3_externalid')]"
+                            "id": "[parameters('networkInterfaces_TutoVMClientAD4_externalid')]"
                         }
                     ]
                 }
@@ -68,10 +68,10 @@
         {
             "type": "Microsoft.Compute/virtualMachines/extensions",
             "apiVersion": "2018-10-01",
-            "name": "[concat(parameters('virtualMachines_TutoVMClientAD3_name'), '/myCustomScript')]",
+            "name": "[concat(parameters('virtualMachines_TutoVMClientAD4_name'), '/myCustomScript')]",
             "location": "eastus",
             "dependsOn": [
-                "[resourceId('Microsoft.Compute/virtualMachines', parameters('virtualMachines_TutoVMClientAD3_name'))]"
+                "[resourceId('Microsoft.Compute/virtualMachines', parameters('virtualMachines_TutoVMClientAD4_name'))]"
             ],
             "properties": {
                 "autoUpgradeMinorVersion": true,
