@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "virtualMachines_TutoVMClientAD4_name": {
-            "value": TutoVMClientAD4
+            "value": "TutoVMClientAD4"
         },
         "disks_TutoVMClientAD4_OsDisk_1_599c09991e4f4b33a04759dfdcf5063a_externalid": {
             "value": null
