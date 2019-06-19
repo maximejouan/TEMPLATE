@@ -1,20 +1,8 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-        "virtualMachines_TutoVMClientAD4_name": {
-            "defaultValue": "TutoVMClientAD4",
-            "type": "String"
-        },
-        "disks_TutoVMClientAD4_OsDisk_1_599c09991e4f4b33a04759dfdcf5063a_externalid": {
-            "defaultValue": "/subscriptions/922efab2-bf0e-4c64-bd4e-9175595a3181/resourceGroups/TUTORIALRESOURCES/providers/Microsoft.Compute/disks/TutoVMClientAD3_OsDisk_1_599c09991e4f4b33a04759dfdcf5063a",
-            "type": "String"
-        },
-        "networkInterfaces_TutoVMClientAD4_externalid": {
-            "defaultValue": "/subscriptions/922efab2-bf0e-4c64-bd4e-9175595a3181/resourceGroups/TutorialResources/providers/Microsoft.Network/networkInterfaces/TutoVMClientAD3",
-            "type": "String"
-        }
-    },
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": { }
+},
     "variables": {},
     "resources": [
         {
