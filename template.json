@@ -40,7 +40,7 @@
                         "caching": "ReadWrite",
                         "managedDisk": {
                             "storageAccountType": "Premium_LRS",
-                            "id": "[parameters('disks_TutoVMClientAD4_OsDisk_1_599c09991e4f4b33a04759dfdcf5063a_externalid')]"
+                            "id": "[parameters('')]"
                         },
                         "diskSizeGB": 127
                     },
