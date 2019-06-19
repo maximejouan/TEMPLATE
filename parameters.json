@@ -2,13 +2,13 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "virtualMachines_TutoVMClientAD3_name": {
+        "virtualMachines_TutoVMClientAD4_name": {
             "value": null
         },
-        "disks_TutoVMClientAD3_OsDisk_1_599c09991e4f4b33a04759dfdcf5063a_externalid": {
+        "disks_TutoVMClientAD4_OsDisk_1_599c09991e4f4b33a04759dfdcf5063a_externalid": {
             "value": null
         },
-        "networkInterfaces_TutoVMClientAD3_externalid": {
+        "networkInterfaces_TutoVMClientAD4_externalid": {
             "value": null
         }
     }
